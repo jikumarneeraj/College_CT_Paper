@@ -1,0 +1,157 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    color: #333;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Section */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    animation: slideIn 1s ease-in-out;
+}
+
+#header img {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+}
+
+#header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Welcome and Note */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+h3 {
+    font-size: 20px;
+    color: #555;
+}
+
+.note {
+    background-color: #FFEB3B;
+    padding: 10px;
+    margin-top: 15px;
+    display: inline-block;
+    border-radius: 4px;
+    animation: flash 1.5s infinite;
+}
+
+/* Links Section */
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.first-second, .third-fourth {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#first, #second, #third, #fourth {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#first:hover, #second:hover, #third:hover, #fourth:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Link Animations */
+#first h3 a, #second h3 a, #third h3 a, #fourth h3 a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+    display: inline-block;
+}
+
+#first h3 a:hover, #second h3 a:hover, #third h3 a:hover, #fourth h3 a:hover {
+    color: #2E7D32;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer-note {
+    font-size: 16px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.footer {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0%, 100% {
+        background-color: #FFEB3B;
+    }
+    50% {
+        background-color: #FFD54F;
+    }
+}
