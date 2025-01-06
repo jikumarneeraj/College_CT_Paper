@@ -13,6 +13,13 @@ header {
     text-align: center;
     padding: 20px;
 }
+.main{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 
 header h1 {
     margin: 0;
@@ -29,7 +36,7 @@ header h1 {
 /* Scrollable Sections */
 .scrollable-section {
     flex: 1; /* Equal width for sections */
-    max-height: 400px; /* Limit height */
+    max-height: 450px; /* Limit height */
     overflow-y: auto; /* Enable vertical scrolling */
     padding: 20px;
     background-color: white;
@@ -107,6 +114,7 @@ header h1 {
 }
 a{
     text-decoration: none;
+    color: rgb(10, 89, 84);
 }
 /* Responsive Design */
 @media (max-width: 768px) {

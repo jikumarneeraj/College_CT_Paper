@@ -13,6 +13,13 @@ header {
     text-align: center;
     padding: 20px;
 }
+.main{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 
 header h1 {
     margin: 0;
@@ -86,6 +93,7 @@ header h1 {
 }
 a{
     text-decoration: none;
+    color: rgb(10, 89, 84);
 }
 
 /* Resource List */

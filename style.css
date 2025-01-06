@@ -28,8 +28,10 @@ body {
     color: #fff;
     animation: slideIn 1s ease-in-out;
 }
-
-
+a{
+    text-decoration: none;
+    color: white;
+}
 #header img {
     height: 80px;
     width: auto;
