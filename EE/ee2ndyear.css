@@ -80,7 +80,13 @@ header h1 {
     color: white;
 }
 
-
+.final{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
 
 /* Resource List */
 .resource-list {

@@ -101,6 +101,13 @@ header h1 {
 .resource-list a:hover {
     text-decoration: underline;
 }
+.final{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
